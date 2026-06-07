@@ -3,30 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Artículos</title>
+  <title>Artículos</title><link rel="stylesheet" href="/css/pico.min.css">
+  <link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
-  <header class="site-header"><div class="site-brand">
-      <a href="/es/" class="site-name">Enrique</a>
-      <p class="site-tagline">Desarrollo, IT y aprendizaje</p>
-    </div>
+  <div class="layout">
 
-    <nav class="site-nav"><ul class="site-menu">
-        <li>
-          <a href="/es/">Home</a>
-        </li>
-        <li>
-          <a href="/es/articulos/" aria-current="page">Artículos</a>
-        </li>
-      </ul>
-      <ul class="site-langs">
-        <li><a href="/en/articles/">EN</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header class="site-header"><div class="site-brand">
+        <a href="/es/" class="site-name">Enrique</a>
+        <p class="site-tagline">Desarrollo, IT y aprendizaje</p>
+      </div>
 
-  <main class="site-main">
-    
+      <nav class="site-nav">
+        <ul class="site-langs">
+          <li><a href="/en/articles/">EN</a></li>
+        </ul><ul class="site-menu">
+          <li>
+            <a href="/es/">Home</a>
+          </li>
+          <li>
+            <a href="/es/articulos/" aria-current="page">Artículos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="site-main">
+      
 <h1>Artículos</h1>
 <ul>
   <li>
@@ -51,10 +54,24 @@
   </li>
 </ul>
 
-  </main>
+    </main>
 
-  <footer class="site-footer">
-    <p>Enrique – 2026</p>
-  </footer>
+    <footer class="site-footer">
+      <p>Enrique – 2026</p>
+    </footer>
+  </div><div class="mobile-bar">
+    <button class="site-burger" aria-label="Abrir menú" aria-expanded="false"
+            onclick="const m=document.getElementById('mobileMenu');const o=m.classList.toggle('open');this.setAttribute('aria-expanded',o)">☰</button>
+    <div class="mobile-brand">
+      <a href="/es/" class="site-name">Enrique</a>
+      <p class="site-tagline">Desarrollo, IT y aprendizaje</p>
+    </div>
+    <ul class="site-langs">
+      <li><a href="/en/articles/">EN</a></li>
+    </ul>
+  </div><ul class="mobile-menu" id="mobileMenu">
+    <li><a href="/es/">Home</a></li>
+    <li><a href="/es/articulos/" aria-current="page">Artículos</a></li>
+  </ul>
 </body>
 </html>
